@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #191919;
+    text-align: center;
+    color: #CED0CE;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    background-color: #CED0CE;
+    border-radius: 1rem;
+    border: none;
+    font-size: 10vmin;
+
+}
+#btn button{
+    padding: 1rem;
+    background-color: #CED0CE;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+}
+
+#new-btn{
+    padding: 1rem;
+    background-color: black;
+    font-size: 1rem;
+    border-radius: 1rem;
+    border: none;
+    color: #CED0CE;
+    margin-top: 3px;
+}
+
+.modal {
+  display: none; 
+  position: fixed;
+  z-index: 5;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+
+.modal.show {
+  display: block;
+}
+
+
+.modal-content {
+  background-color: #CED0CE;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  max-width: 400px;
+  text-align: center;
+  z-index: 6;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#winnerMessage{
+    color: #191919;
+}
+#winnerName{
+    color: #191919;
+}
+.g-over{
+    color: #191919;
+}
+
+#winning-line {
+    position: absolute;
+    height: 4px;
+    background-color: green;
+    transform-origin: 0 0;
+    display: none;
+    z-index: 1;
+}
+
