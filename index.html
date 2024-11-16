@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Modal structure for displaying the winner -->
+<div id="winnerModal" class="modal hide">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2 class="g-over">Game Over</h2>
+      <p id="winnerMessage">Congratulations, the winner is <span id="winnerName"></span>!</p>
+      <button id="new-btn">Play Again</button>
+    </div>
+  </div>
+  
+    <h1>TIC TAC TOE</h1>
+
+    <div class="container">
+
+        <div class="game">
+            <button class="box"></button>
+            <button  class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+            <button class="box"></button>
+        </div>
+        <div id="winning-line"></div>
+    </div>
+   
+
+    <div id="btn"><button>RESET BUTTON</button></div>
+
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>
